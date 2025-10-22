@@ -38,7 +38,6 @@ void CApplication::Start(){
 
 void CApplication::Update()
 {
-	mBackGround.Render();
 	//頂点1､頂点2､頂点3,法線データの作成
 	CVector v0, v1, v2, n;
 	//法線を上向きで設定する
@@ -163,5 +162,6 @@ void CApplication::Update()
 	//t2.Normal(CVector(1.0f, 0.0f, 0.0f));
 	//三角形の描画
 	//t2.Render();
+	mBackGround.Render();
 }
 
