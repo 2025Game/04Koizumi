@@ -31,6 +31,7 @@ public:
 	//繰り返し実行するプログラム
 	void Update();
 private:
+	CModel mBackGround; //背景モデル
 	CVector mEye;
 
 	CSound mSoundBgm;
