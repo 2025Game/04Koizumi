@@ -6,6 +6,7 @@
 #include "CInput.h"
 #include "CVector.h"
 #include "CTriangle.h"
+#include "CMatrix.h"
 
 //モデルデータの指定
 #define MODEL_OBJ "res\\f14.obj", "res\\f14.mtl"
@@ -30,6 +31,8 @@ CCharacterManager* CApplication::CharacterManager()
 }
 
 void CApplication::Start(){
+	CMatrix matrix;
+	matrix.Print();
 	mEye = CVector(1.0f, 2.0f, 3.0f);
 	//モデルファイルの入力
 	mModel.Load(MODEL_OBJ);
