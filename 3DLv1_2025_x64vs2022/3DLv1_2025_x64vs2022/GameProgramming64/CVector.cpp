@@ -1,4 +1,5 @@
 #include "CVector.h"
+#include "CMatrix.h"
 CVector::CVector()
 	: mX(0.0f)
 	, mY(0.0f)
@@ -36,6 +37,15 @@ float CVector::Z() const
 CVector CVector::operator+(const CVector& v) const
 {
 	return CVector(mX + v.mX, mY + v.mY, mZ + v.mZ);
+}
+
+CVector CVector::operator*(const CMatrix& m) const
+{
+	return CVector(
+		mX * m.M(0, 0) + mY * m.M(1, 0) + mZ * m.M(2, 0) + m.M(3, 0),
+		mX * m.M(0, 1) + mY * m.M(1, 1) + mZ * m.M(2, 1) + m.M(3, 1),
+		mX * m.M(0, 2) + mY * m.M(1, 2) + mZ * m.M(2, 2) + m.M(3, 2)
+	);
 }
 
 //-演算子のオーバーロード
