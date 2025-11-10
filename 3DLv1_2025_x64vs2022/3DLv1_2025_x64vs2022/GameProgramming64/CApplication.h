@@ -10,6 +10,8 @@
 #include "CGame.h"
 #include "CVector.h"
 #include "CModel.h"
+#include "CCharacter3.h"
+#include "CTransform.h"
 
 class CApplication
 {
@@ -31,6 +33,8 @@ public:
 	//ŒJ‚è•Ô‚µÀs‚·‚éƒvƒƒOƒ‰ƒ€
 	void Update();
 private:
+	CCharacter3 mCharacter;
+	CCharacter3 mPlayer;
 	CModel mBackGround; //”wŒiƒ‚ƒfƒ‹
 	CVector mEye;
 
