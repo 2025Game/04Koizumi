@@ -33,8 +33,8 @@ public:
 	//ŒJ‚è•Ô‚µÀs‚·‚éƒvƒƒOƒ‰ƒ€
 	void Update();
 private:
+	CPlayer mPlayer;
 	CCharacter3 mCharacter;
-	CCharacter3 mPlayer;
 	CModel mBackGround; //”wŒiƒ‚ƒfƒ‹
 	CVector mEye;
 
