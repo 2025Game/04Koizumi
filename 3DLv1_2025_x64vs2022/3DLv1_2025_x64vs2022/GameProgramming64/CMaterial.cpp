@@ -35,7 +35,9 @@ void CMaterial::Disabled()
 
 }
 //デフォルトコンストラクタ
-CMaterial::CMaterial() {
+CMaterial::CMaterial() 
+	       :mVertexNum(0)
+{
 	//名前を0で埋め
 	memset(mName, 0, sizeof(mName));
 	//0で埋める
@@ -81,4 +83,14 @@ float* CMaterial::Diffuse()
 CTexture* CMaterial::Texture()
 {
 	return &mTexture;
+}
+
+void CMaterial::VertexNum(int num)
+{
+	mVertexNum = num;
+}
+
+int CMaterial::VertexNum()
+{
+	return mVertexNum;
 }

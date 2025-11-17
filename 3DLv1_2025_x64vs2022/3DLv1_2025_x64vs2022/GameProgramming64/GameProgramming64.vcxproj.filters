@@ -179,5 +179,8 @@
     <ClInclude Include="CTransform.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
+    <ClInclude Include="CVertex.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

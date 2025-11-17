@@ -7,6 +7,8 @@
 */
 class CMatrix {
 public:
+	//行列の取得
+	float* M() const;
 	//*演算子のオーバーロード
 	//CMatrix * CMatrix の演算結果を返す
 	const CMatrix operator*(const CMatrix& m) const;
@@ -39,8 +41,11 @@ public:
 		CMatrix();
 	//単位行列の作成
 	CMatrix Identity();
+	
 private:
 	//4×4の行列データを設定
 	float mM[4][4];
+	
+
 };
 #endif
