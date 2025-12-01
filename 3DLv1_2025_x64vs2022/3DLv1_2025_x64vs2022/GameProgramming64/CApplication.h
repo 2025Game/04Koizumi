@@ -34,7 +34,7 @@ public:
 	void Update();
 private:
 	CPlayer mPlayer;
-	CCharacter3 mCharacter;
+	//CCharacter3 mCharacter;
 	CModel mBackGround; //”wŒiƒ‚ƒfƒ‹
 	CVector mEye;
 
