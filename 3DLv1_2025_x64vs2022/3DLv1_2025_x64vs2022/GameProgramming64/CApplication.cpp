@@ -7,6 +7,8 @@
 #include "CVector.h"
 #include "CTriangle.h"
 #include "CMatrix.h"
+#include "CTaskManager.h"
+#include "CTask.h"
 
 //モデルデータの指定
 #define MODEL_OBJ "res\\f14.obj", "res\\f14.mtl"
@@ -19,6 +21,13 @@
 
 CCharacterManager CApplication::mCharacterManager;
 CTexture CApplication::mTexture;
+
+CTaskManager CApplication::mTaskManager;
+CTaskManager* CApplication::TaskManager()
+{
+	return &mTaskManager;
+}
+
 
 CTexture* CApplication::Texture()
 {
@@ -106,8 +115,11 @@ void CApplication::Update()
 		gluLookAt(e.X(), e.Y(), e.Z(), c.X(), c.Y(), c.Z(), u.X(), u.Y(), u.Z());
 
 	mPlayer.Render();
-	mPlayer.bullet.Update();
-	mPlayer.bullet.Render();
+	//タスクマネージャの更新
+	mTaskManager.Update();
+	//タスクマネージャの描画
+	mTaskManager.Render();
+
 
 	
 
