@@ -35,6 +35,8 @@ public:
 	//繰り返し実行するプログラム
 	void Update();
 private:
+	//C5モデル
+	CModel mModelC5;
 	static CTaskManager mTaskManager;
 	CPlayer mPlayer;
 	//CCharacter3 mCharacter;
