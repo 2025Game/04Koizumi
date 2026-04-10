@@ -4,6 +4,7 @@
 #include "CCharacter3.h"
 //三角形クラスのインクルード
 #include "CTriangle.h"
+#include "CCollider.h"
 
 /*
 弾クラス
@@ -24,6 +25,7 @@ private:
 	int mLife;
 	//三角形
 	CTriangle mT;
+	CCollider mCollider;
 };
 
 #endif
