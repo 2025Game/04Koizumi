@@ -9,6 +9,7 @@
 #include "CCollisionManager.h"
 #include "CBillBoard.h"
 #include "CCamera.h"
+#include "CModelX.h"
 
 CUi* CApplication::spUi = nullptr;
 
@@ -60,6 +61,8 @@ CCharacterManager* CApplication::CharacterManager()
 
 void CApplication::Start()
 {
+	//3Dモデルファイルの読み込み
+	mModelX.Load(MODEL_FILE);
 	mFont.Load("FontG.png", 1, 4096 / 64);
 }
 

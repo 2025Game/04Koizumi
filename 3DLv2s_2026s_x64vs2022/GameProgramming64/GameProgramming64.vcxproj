@@ -53,6 +53,7 @@
     <ClCompile Include="CUi.cpp" />
     <ClCompile Include="CVector.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="CModelX.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CApplication.h" />
@@ -78,6 +79,7 @@
     <ClInclude Include="CMatrix.h" />
     <ClInclude Include="CMiss.h" />
     <ClInclude Include="CModel.h" />
+    <ClInclude Include="CModelX.h" />
     <ClInclude Include="CPlayer.h" />
     <ClInclude Include="CPlayer2.h" />
     <ClInclude Include="CPoint.h" />
