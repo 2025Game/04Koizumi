@@ -39,6 +39,8 @@
     <ClCompile Include="CPlayer2.cpp" />
     <ClCompile Include="CPoint.cpp" />
     <ClCompile Include="CRectangle.cpp" />
+    <ClCompile Include="CSceneBase.cpp" />
+    <ClCompile Include="CSeceneBase.cpp" />
     <ClCompile Include="CSound.cpp" />
     <ClCompile Include="CTaskManager.cpp" />
     <ClCompile Include="CTexture.cpp" />
@@ -70,6 +72,7 @@
     <ClInclude Include="CPlayer2.h" />
     <ClInclude Include="CPoint.h" />
     <ClInclude Include="CRectangle.h" />
+    <ClInclude Include="CSeceneBase.h" />
     <ClInclude Include="CSound.h" />
     <ClInclude Include="CTask.h" />
     <ClInclude Include="CTaskManager.h" />
@@ -79,6 +82,7 @@
     <ClInclude Include="CUi.h" />
     <ClInclude Include="CVector.h" />
     <ClInclude Include="CVertex.h" />
+    <ClInclude Include="EScene.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

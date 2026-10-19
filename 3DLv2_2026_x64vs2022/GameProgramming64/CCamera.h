@@ -12,4 +12,5 @@ public:
 		, double bottom, double top);
 	//ï\é¶èIóπ
 	static void End();
+private:
 };

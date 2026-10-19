@@ -16,6 +16,15 @@
     <Filter Include="ソース ファイル\Lib">
       <UniqueIdentifier>{275eb950-ff6a-4535-ac0c-c052fcd2fa52}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Game">
+      <UniqueIdentifier>{15b0b105-6038-41bf-969e-cb675afaad2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\BaseSystem">
+      <UniqueIdentifier>{dee4e24d-5297-45db-8462-cd3b1065a3e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\BaseSystem\Scene">
+      <UniqueIdentifier>{4c50826d-a0e4-4904-8e15-2e4457c06c69}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CApplication.cpp">
@@ -23,9 +32,6 @@
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="CSound.cpp">
-      <Filter>ソース ファイル\Lib</Filter>
     </ClCompile>
     <ClCompile Include="CTexture.cpp">
       <Filter>ソース ファイル\Lib</Filter>
@@ -102,6 +108,15 @@
     <ClCompile Include="CCollider.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="CSound.cpp">
+      <Filter>ソース ファイル\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="CSceneBase.cpp">
+      <Filter>ソース ファイル\BaseSystem\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CSeceneBase.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CApplication.h">
@@ -109,9 +124,6 @@
     </ClInclude>
     <ClInclude Include="main.h">
       <Filter>ソース ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="CSound.h">
-      <Filter>ソース ファイル\Lib</Filter>
     </ClInclude>
     <ClInclude Include="CTexture.h">
       <Filter>ソース ファイル\Lib</Filter>
@@ -196,6 +208,15 @@
     </ClInclude>
     <ClInclude Include="CCollider.h">
       <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="EScene.h">
+      <Filter>ソース ファイル\BaseSystem\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CSound.h">
+      <Filter>ソース ファイル\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="CSeceneBase.h">
+      <Filter>ソース ファイル\BaseSystem\Scene</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
